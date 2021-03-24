@@ -45,7 +45,14 @@ Here's a walkthrough of implemented user stories:
 
 ## Reflection Questions
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
-[YOUR ANSWER HERE]
+- https://stackabuse.com/javascript-generate-random-number-in-range/
+- https://www.w3schools.com/js/js_output.asp 
+- https://pnghut.com/ 
+- https://pngtree.com/ 
+- https://www.w3schools.com/tags/tag_img.asp 
+- https://www.geeksforgeeks.org/how-to-change-an-input-button-image-using-css/ 
+- https://www.w3schools.com/howto/howto_css_images_side_by_side.asp 
+- Note: all images used were Royalty Free
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
 [YOUR ANSWER HERE]
