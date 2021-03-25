@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Hello!</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <h1>Light and Sound Memory Game</h1>
+    
+    
+    
+    <!-- welcome message and directions -->
+    
+    <p id = "welcomeMessage">
+      Welcome to the Light and Sound Memory Game!
+    </p>
+    
+    
+    <p id = "directions" class="hidden">
+      
+      Repeat the pattern back to win the game!
+    </p>
+    
+    
+    
+    <p id = "triesLeft" class="hidden">
+      
+    </p>
+    
+    
+    <!-- Define start and end buttons -->
+    
+    <button id = "startBtn" onclick="startGame()">
+      
+      Start
+    </button>
+    
+    <button class= "hidden" id = "stopBtn" onclick="stopGame()">
+      Stop
+    </button>
+    
+    
+    
+    
+    <!-- Game buttons -->
+    <div id = "gameButtonArea">
+       
+      <button id = "button1" onclick = "guess(1)" onmousedown="startTone(1)" 
+              onmouseup="stopTone()">
+      </button>
+      
+      
+      <button id = "button2" onclick = "guess(2)" onmousedown="startTone(2)" 
+              onmouseup="stopTone()">
+      </button>
+      
+      
+      <button id = "button3" onclick = "guess(3)" onmousedown="startTone(3)" 
+              onmouseup="stopTone()">
+      </button>
+      
+      
+      <button id = "button4" onclick = "guess(4)" onmousedown="startTone(4)" 
+              onmouseup="stopTone()">
+      </button>
+      
+      
+      <button id = "button5" onclick = "guess(5)" onmousedown="startTone(5)"
+              onmouseup="stopTone()">
+      </button>
+    
+      
+    </div>
+    
+    
+    
+    <h1>
+      You got this! Have fun!
+    </h1>
+
+      
+    
+    <div id = "row">
+      
+      <div class="column">
+        <img src="https://cdn.glitch.com/ae4d7b04-ed1e-4d70-ba1e-439c62802c5a%2Fpenguin.png?v=1616581309589" style="width:100%">
+      </div>
+
+    <div class="column">
+      <img src="https://cdn.glitch.com/ae4d7b04-ed1e-4d70-ba1e-439c62802c5a%2Fgpig.png?v=1616581309874" style="width:100%">
+      </div>
+    
+      <div class="column">
+        <img src="https://cdn.glitch.com/ae4d7b04-ed1e-4d70-ba1e-439c62802c5a%2Fpusheen.png?v=1616581309888" style="width:100%">
+      </div>
+    
+    <div class="column">
+      <img src="https://cdn.glitch.com/ae4d7b04-ed1e-4d70-ba1e-439c62802c5a%2Fpig.png?v=1616581310499" style="width:100%">
+      </div>
+    
+    <div class="column">
+      <img src="https://cdn.glitch.com/ae4d7b04-ed1e-4d70-ba1e-439c62802c5a%2Fbunny.png?v=1616581313955" style="width:100%">
+      </div>
+    
+    </div>
+    
+
+    
+  </body>
+</html>
