@@ -57,13 +57,9 @@ Here's a walkthrough of implemented user stories:
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
 
-One challenge I encountered occurred when I tried to implement the fourth optional feature: “Give the player 3 strikes.” I understood where to place the logic for handling when a mistake was made but I ran into an issue where the next pattern in the sequence was played after a mistake rather than the one the user just did incorrectly.
-
-I realized that it made more sense for the user to be able to repeat the same pattern they’d done incorrectly before proceeding to the next part of the pattern, but I struggled to figure out where my issue was. 
-
+[One challenge I encountered occurred when I tried to implement the fourth optional feature: “Give the player 3 strikes.” I understood where to place the logic for handling when a mistake was made but I ran into an issue where the next pattern in the sequence was played after a mistake rather than the one the user just did incorrectly. I realized that it made more sense for the user to be able to repeat the same pattern they’d done incorrectly before proceeding to the next part of the pattern, but I struggled to figure out where my issue was. 
 To solve this, I utilized the console as described in the tutorial. I printed out the variables that were being modified during a guess such as progress and the amount of mistakes made. I made a hypothesis that my issue was due to the progress variable being modified incorrectly, and tested out this hypothesis by purposely playing a game where I made multiple mistakes and watching the values in the console. After doing this, I was able to verify my hypothesis by seeing that the progress variable was being incorrectly incremented. 
-
-Another difficulty I had with implementing this feature was in displaying the amount of tries the user had left. I wanted to display this as an HTML element but also add a variable that would be updated through the script.js file. At first, I felt lost about how to connect these two components, but I went back to the document.getElementById() method and decided to view the documentation and check the available methods I could call on a HTML element. Through this, I learned about Element.innerHTML and taught myself how to display a dynamic JavaScript variable through an HTML element. 
+Another difficulty I had with implementing this feature was in displaying the amount of tries the user had left. I wanted to display this as an HTML element but also add a variable that would be updated through the script.js file. At first, I felt lost about how to connect these two components, but I went back to the document.getElementById() method and decided to view the documentation and check the available methods I could call on a HTML element. Through this, I learned about Element.innerHTML and taught myself how to display a dynamic JavaScript variable through an HTML element.]
 
 
 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
