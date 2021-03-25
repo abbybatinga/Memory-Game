@@ -56,14 +56,34 @@ Here's a walkthrough of implemented user stories:
 - Note: all images used were Royalty Free
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
-[YOUR ANSWER HERE]
+
+One challenge I encountered occurred when I tried to implement the fourth optional feature: “Give the player 3 strikes.” I understood where to place the logic for handling when a mistake was made but I ran into an issue where the next pattern in the sequence was played after a mistake rather than the one the user just did incorrectly.
+
+I realized that it made more sense for the user to be able to repeat the same pattern they’d done incorrectly before proceeding to the next part of the pattern, but I struggled to figure out where my issue was. 
+
+To solve this, I utilized the console as described in the tutorial. I printed out the variables that were being modified during a guess such as progress and the amount of mistakes made. I made a hypothesis that my issue was due to the progress variable being modified incorrectly, and tested out this hypothesis by purposely playing a game where I made multiple mistakes and watching the values in the console. After doing this, I was able to verify my hypothesis by seeing that the progress variable was being incorrectly incremented. 
+
+Another difficulty I had with implementing this feature was in displaying the amount of tries the user had left. I wanted to display this as an HTML element but also add a variable that would be updated through the script.js file. At first, I felt lost about how to connect these two components, but I went back to the document.getElementById() method and decided to view the documentation and check the available methods I could call on a HTML element. Through this, I learned about Element.innerHTML and taught myself how to display a dynamic JavaScript variable through an HTML element. 
+
 
 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
-[YOUR ANSWER HERE]
+
+Throughout this pre-work assignment, I was curious about many aspects of web development such as saving data, privacy, accessibility, and efficiency. One of the main questions I have about web development is: how can we improve the security and privacy of an application or website published to the web?
+
+If for example, this game had included the option to enter one’s name or email address, what methods would be necessary to 1. Save this data, and 2. Protect this data. Web applications in particular have a very unique responsibility because usually they handle sensitive data, so what measures can a developer take to make sure this data is protected?
+
+Another question I have is regarding efficiency. How can we design web applications or websites to have efficient interactions with the user. For example, a website that takes very long to load or to process some type of user input would cause a negative experience for the user. So what types of design considerations must be made with the assets as well as the back-end in order to make sure the website is not only robust but also runs in a timely manner for the user?
+
+Along with these questions, I also want to know: how can we make websites or applications more accessible? For example, I know HTML images provide the option for alt text, which is useful to those who use screen reader software to listen to the contents of a website. But beyond this, what web development practices such as the design of a button, color choices, or headers, can help make a site more accessible to those with certain impairments or disabilities?
+
 
 4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words) 
-[YOUR ANSWER HERE]
 
+If I had a few more hours to work on this project, I would improve functions such as playClueSequence() and add additional features to encourage users to keep playing. 
+
+One thing I noticed as I was playing the game was that users are still able to click the buttons while the clue sequence is playing. Although it is inferred that the user should wait for the clue sequence to finish playing before clicking any buttons, it is still possible they might do so, and when they do, unwanted behavior is produced. If possible, I’d want to modify the playClueSequence() method to restrict users from clicking buttons until the clue sequence is finished playing. If this isn’t possible, I could also add a message that shows up for as long as the sequence is playing to inform users not to begin replicating the pattern yet.
+
+In terms of additional features, I’d want to provide opportunities to make the game more challenging and potentially collaborative. For example, there could be a feature that includes multiple levels, where difficulty is increased by the speed of the clue sequence playback and the number of memory buttons. For collaboration, it’d be interesting to have a multiplayer option where users see who can complete the entire pattern faster. To increase retention, it would be great if users could see their progress in various sessions, where we keep a score based on how many patterns were done correctly, and they are notified if they’ve beaten their last saved high score.
 
 
 ## License
